@@ -11,6 +11,8 @@ const telephoneReq = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
 const emailReq = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 const commentsReq = /[A-Za-zА-Яа-яЁё]/;
 
+//возможно есть вариант написания этой функции короче, но это максимум, что я придумала
+
 document.querySelector('.btn').onclick = function (event) {
     event.preventDefault()
     if (nameReq.test(name.value)) {
