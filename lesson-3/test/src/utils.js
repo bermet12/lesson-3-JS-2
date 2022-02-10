@@ -3,7 +3,7 @@
 function pow(a, b) {
     let result = 1;
     if (b == 0) {
-        return result = 1;
+        return result;
     } else if (a == 0) {
         return result = 0;
     } else if (a < 0 && b > 0) {
